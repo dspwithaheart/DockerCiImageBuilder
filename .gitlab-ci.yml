@@ -80,10 +80,10 @@ variables:
       mkdir -p /kaniko/.docker
       echo "{\"auths\":{\"$DOCKER_CI_REGISTRY\":{\"auth\":\"$(echo -n $DOCKER_CI_REGISTRY_USER:$DOCKER_CI_REGISTRY_PASSWORD | base64)\"}}}" > /kaniko/.docker/config.json
       cp /etc/gitlab-runner/certs/ca.crt /kaniko/ssl/certs/additional-ca-cert-bundle.crt
-      /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile $KANIKO_CACHE_ARGS $FORMATTEDTAGLIST $IMAGE_LABELS
+      /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/$COMPONENT/Dockerfile $KANIKO_CACHE_ARGS $FORMATTEDTAGLIST $IMAGE_LABELS
 
 build-testkanikodebug:
   extends: .build_with_kaniko
   variables:
-      COMPONENT: "kanikoimagebuilder"
+      COMPONENT: "python"
       PROJECT_NAME: "kanikoimagebuilder"
