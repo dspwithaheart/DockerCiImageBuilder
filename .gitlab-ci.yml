@@ -36,7 +36,7 @@ variables:
 .build_with_kaniko:
   #Hidden job to use as an "extends" template
   stage: build
-  tags: [debug]
+#  tags: [debug]
 
   rules:
     - if: $CI_COMMIT_TAG
