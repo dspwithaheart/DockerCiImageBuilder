@@ -85,5 +85,5 @@ variables:
 build-testkanikodebug:
   extends: .build_with_kaniko
   variables:
-      COMPONENT: "KanikoImageBuilder"
+      COMPONENT: "kanikoimagebuilder"
       PROJECT_NAME: "KanikoImageBuilder"
