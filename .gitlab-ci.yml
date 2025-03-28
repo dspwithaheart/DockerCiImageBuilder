@@ -29,9 +29,9 @@ variables:
     --label com.gitlab.ci.mrurl=$CI_PROJECT_URL/-/merge_requests/$CI_MERGE_REQUEST_ID
 
   GIT_SSL_NO_VERIFY: "1"
-  DOCKER_CI_REGISTRY_IMAGE_BASE: amnexus:9003/it/kanikoimagebuilder
-#  DOCKER_CI_REGISTRY: https://amnexus:9003/v1/
-#  DOCKER_CI_REGISTRY_USER: it_docker_deploy
+#  DOCKER_CI_REGISTRY_IMAGE_BASE: docker_registry/it/kanikoimagebuilder
+#  DOCKER_CI_REGISTRY: https://docker_registry
+#  DOCKER_CI_REGISTRY_USER: docker_deploy
 
 .build_with_kaniko:
   #Hidden job to use as an "extends" template
