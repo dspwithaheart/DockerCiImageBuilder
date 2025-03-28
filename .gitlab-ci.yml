@@ -29,7 +29,7 @@ variables:
     --label com.gitlab.ci.mrurl=$CI_PROJECT_URL/-/merge_requests/$CI_MERGE_REQUEST_ID
 
   GIT_SSL_NO_VERIFY: "1"
-#  DOCKER_CI_REGISTRY_IMAGE_BASE: amnexus:9003/it/testkanikodebug
+  DOCKER_CI_REGISTRY_IMAGE_BASE: amnexus:9003/it/kanikoimagebuilder
 #  DOCKER_CI_REGISTRY: https://amnexus:9003/v1/
 #  DOCKER_CI_REGISTRY_USER: it_docker_deploy
 
