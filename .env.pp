@@ -1,0 +1,16 @@
+SECRET_KEY=lizpdph7g61h!vprq(oq1z311yky4#c(6^b(9z=x36171dnirifto
+ENV=DD
+ALLOWED_HOSTS=dnir.services.amtc-dresden.com
+TAG_VERSION=0.1.0
+DNIR_DB_HOST=oda01.amtc-dresden.com
+DNIR_DB_PORT=1521
+DNIR_DB_SERVICE=srdd.amtc-dresden.com
+DNIR_DB_USER=++++++
+DNIR_DB_PASSWORD=+++
+DNIR_DB_TEST_USER=++++++
+DNIR_DB_TEST_PASSWORD=++++++
+PROXY_SUBDOMAIN=dnir
+PROXY_DOMAIN=services-test.amtc-dresden.com
+PROXY_NETWORK=reverse-proxy_service-discovery
+LDAP_CN=++++++
+LDAP_PW=++++++

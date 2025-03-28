@@ -1,0 +1,3 @@
+; [submodule "src/.../"]
+; 	path = src/.../
+; 	url = ssh://git@amuxgit01.amtc-dresden.com:122/it/....git
